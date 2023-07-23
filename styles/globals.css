@@ -1,0 +1,62 @@
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.pageContainer{
+  height: 70vh;
+  width: 50vw;
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.links{
+  width: 50vw;
+  margin-bottom: 5px;
+}
+
+.links :nth-child(1){
+  font-weight: 600;
+}
+
+h4{
+  font-weight: 400;
+}
+
+.links *{
+  margin: 3px;
+}
+
+.circle{
+  position: absolute;
+  width: 278px;
+  height: 278px;
+
+background: conic-gradient(from 180deg at 50% 50%, #D9D9D9 0deg, #EDC1DB 97.5deg, #FFABDD 183.75deg, #FFD8AB 333.75deg, #D9D9D9 360deg);
+transform: rotate(-90.34deg) scale(1.35);
+border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .circle{
+    transform: scale(0.9);
+  }
+
+  .pageContainer{
+    width: 80vw;
+  }
+
+  .links{
+    width: 80vw;
+  }
+}
